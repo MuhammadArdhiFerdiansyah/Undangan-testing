@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Santi Rozzy Wedding//ID
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+
+BEGIN:VEVENT
+
+UID:santirozzy20260924@gmail.com
+
+DTSTAMP:20260924T000000Z
+
+DTSTART:20260924T010000Z
+DTEND:20260924T050000Z
+
+SUMMARY:Pernikahan Santi & Rozzy
+
+DESCRIPTION:Kami mengundang Anda untuk menghadiri pernikahan kami.%0A%0ASanti & Rozzy%0A%0ALokasi:%0ADsn. Sambongan, Kel. Karangboyo, Kec. Cepu, Kab. Blora, Jawa Tengah%0A%0AGoogle Maps:%0Ahttps://maps.app.goo.gl/oC3YJ7FaNnyaHBiv6
+
+LOCATION:Dsn. Sambongan, Kel. Karangboyo, Kec. Cepu, Kab. Blora, Jawa Tengah
+
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Besok adalah hari pernikahan Santi & Rozzy.
+END:VALARM
+
+END:VEVENT
+
+END:VCALENDAR
