@@ -34,7 +34,7 @@ html{
 body{
     margin:0;
     width:100%;
-    height:100%;
+    height:100dvh;
     overflow:hidden;
 }
 
@@ -1323,17 +1323,37 @@ FLOAT BUTTON
 
     transition:.35s;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #musicBtn{
 
     bottom:100px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+
+body.opened #musicBtn {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    pointer-events: auto;
 }
 
 #scrollTop{
 
     bottom:30px;
+    opacity: 0; 
+    pointer-events: none;
 
 }
 
@@ -1482,7 +1502,7 @@ RESPONSIVE
 
     body{
 
-        overflow:auto;
+        overflow:hidden;
 
     }
 
@@ -1493,15 +1513,10 @@ RESPONSIVE
     }
 
     .mobile-frame{
-
-        width:100%;
-
-        height:100vh;
-
-        border-radius:0;
-
-        border:none;
-
+        width: 100%;
+        height: 100dvh; /* Paksa 100% tinggi layar */
+        border-radius: 0;
+        border: none;
     }
 
     .desktop-bg{
@@ -1526,10 +1541,18 @@ RESPONSIVE
 
 @media(max-width:430px){
 
-    .count-grid{
+.count-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px; /* Jarak antar kotak diperkecil */
+    }
 
-        grid-template-columns:repeat(2,1fr);
-
+    /* Perkecil teks sedikit agar tidak luber di layar HP */
+    .time-box span {
+        font-size: 26px; 
+    }
+    
+    .time-box small {
+        font-size: 11px;
     }
 
     .cover-content h1{
