@@ -1209,13 +1209,16 @@ THANK YOU
 
 .thanks-overlay{
     position:absolute;
-    inset:0;
+    top:-24px;
+    left:0;
+    right:0;
+    bottom:0;
     background: linear-gradient(180deg,
-        #101010 0%,
-        #101010 8%,
-        rgba(16,16,16,.15) 30%,
-        rgba(16,16,16,.15) 45%,
-        rgba(10,10,10,.92) 100%);
+        rgba(0,0,0,1) 0px,
+        rgba(0,0,0,1) 24px,
+        rgba(0,0,0,.15) 20%,
+        rgba(0,0,0,.15) 42%,
+        rgba(0,0,0,.88) 100%);
 }
 
 .thanks::before{
@@ -2171,7 +2174,7 @@ FOOTER CREDIT (GRADASI MEMUDAR)
 
 .my-footer {
     position: relative;
-    z-index: 10;
+    z-index: 0;
     
     /* 1. Ditarik LEBIH TINGGI ke atas (150px) agar transisinya panjang, halus, dan memakan garis potong foto */
     margin-top: -150px; 
