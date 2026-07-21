@@ -2147,6 +2147,7 @@ FOOTER CREDIT (GRADASI MEMUDAR)
 
 .footer-credit {
     position: absolute;
+    z-index: 0;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -2174,7 +2175,7 @@ FOOTER CREDIT (GRADASI MEMUDAR)
 
 .my-footer {
     position: relative;
-    z-index: 0;
+    z-index: 10;
     
     /* 1. Ditarik LEBIH TINGGI ke atas (150px) agar transisinya panjang, halus, dan memakan garis potong foto */
     margin-top: -150px; 
