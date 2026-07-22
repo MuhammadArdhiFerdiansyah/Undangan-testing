@@ -2290,3 +2290,54 @@ Efek Partikel
   88%{opacity:var(--op,.75);}
   100%{transform:translate(var(--drift,0px),-112vh);opacity:0;}
 }
+
+
+
+
+@media (max-width:768px){
+
+    /* Hero: dvh biar gak kepotong address bar browser */
+    .hero{
+        min-height:100vh;
+        min-height:100dvh;
+    }
+    .hero-photo{
+        height:100vh;
+        height:100dvh;
+    }
+
+    /* Hero-box: perkecil biar konten pas satu layar */
+    .hero-box{
+        bottom:30px;
+        padding:24px 20px;
+    }
+    .hero-box h2{
+        font-size:clamp(30px,9vw,42px); /* otomatis nyesuaiin 30–42px sesuai lebar layar */
+        margin:12px 0;
+    }
+    .section-mini{
+        font-size:11px;
+        letter-spacing:3px;
+    }
+
+    /* Tombol musik & scroll-top: perkecil biar proporsional */
+    #musicBtn,
+    #scrollTop{
+        width:46px;
+        height:46px;
+        right:16px;
+    }
+    #scrollTop{
+        bottom:20px;
+    }
+    #musicBtn{
+        bottom:76px;
+    }
+    #musicBtn::before{
+        font-size:20px;
+    }
+    #scrollTop::before{
+        font-size:10px;
+    }
+
+}
