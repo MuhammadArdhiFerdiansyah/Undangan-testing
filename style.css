@@ -342,6 +342,29 @@ COVER
 
 }
 
+.guest-wrapper {
+    margin-top: 35px; /* Jarak dari tanggal */
+    margin-bottom: 25px; /* Jarak ke tombol buka undangan */
+    z-index: 2;
+}
+
+.guest-title {
+    color: #eee;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+#namaTamu {
+    font-size: 22px;
+    color: var(--gold); /* Menggunakan warna emas yang sama dengan simbol & */
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+    line-height: 1.3;
+    /* Efek bayangan agar teks tetap terbaca jelas di atas foto */
+    text-shadow: 0 4px 10px rgba(0,0,0,0.6); 
+}
 
 
 /*=============================
