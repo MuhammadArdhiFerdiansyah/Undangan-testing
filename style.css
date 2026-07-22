@@ -2252,11 +2252,11 @@ section:not(.hero):not(.thanks)::before{
 section:not(.hero):not(.thanks)::after{
     content:"♥";
     position:absolute;
-    top:-6px;
+    top:-15px;
     left:50%;
     transform:translateX(-50%);
-    font-size:11px;
-    color:rgba(200,166,106,.85);
+    font-size:40px;
+    color:red;
     pointer-events:none;
     line-height:1;
 }
