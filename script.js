@@ -526,3 +526,13 @@ function spawnParticles(){
 }
 spawnParticles();
 
+/*==================================
+GET GUEST NAME DARI URL
+==================================*/
+const namaTamu = document.getElementById("namaTamu");
+const urlParams = new URLSearchParams(window.location.search);
+const to = urlParams.get('to');
+
+if (to) {
+    namaTamu.innerText = to;
+}
