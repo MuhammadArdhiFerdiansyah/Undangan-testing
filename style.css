@@ -1357,11 +1357,11 @@ body.opened #musicBtn {
 }
 
 #musicBtn::before{
-
     content:"♪";
-
     font-size:26px;
-
+    display: inline-block; 
+    line-height: 1; /* Menghilangkan spasi teks berlebih */
+    transform-origin: center center; /* Memaksa tumpuan rotasi persis di tengah */
 }
 
 #scrollTop::before{
@@ -1372,10 +1372,8 @@ body.opened #musicBtn {
 
 }
 
-#musicBtn.playing{
-
-    animation:spin 5s linear infinite;
-
+#musicBtn.playing::before {
+    animation: spin 4s linear infinite;
 }
 
 @keyframes spin{
@@ -2292,7 +2290,9 @@ Efek Partikel
 }
 
 
-
+/*======================================
+Tombol Music dan ScrollTop, serta Hero Mobile
+======================================*/
 
 @media (max-width:768px){
 
