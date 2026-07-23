@@ -536,3 +536,35 @@ const to = urlParams.get('to');
 if (to) {
     namaTamu.innerText = to;
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // 1. Ambil nama dari URL (misal: ?to=Budi), kalau kosong jadikan 'Tamu Spesial'
+    const urlParams = new URLSearchParams(window.location.search);
+    const nama = urlParams.get('to') || 'Tamu Spesial';
+    
+    // 2. Tangkap elemen #namaTamu di HTML
+    const wadahNama = document.getElementById('namaTamu');
+    
+    // 3. Bersihkan isi aslinya dulu
+    wadahNama.innerHTML = '';
+    
+    // 4. Pecah teks menjadi huruf-huruf, lalu animasikan
+    nama.split('').forEach((huruf, index) => {
+        let span = document.createElement('span');
+        
+        // Cek jika karakternya adalah spasi
+        if (huruf === ' ') {
+            span.innerHTML = '&nbsp;'; // Kode HTML untuk spasi kosong
+        } else {
+            span.innerText = huruf;
+        }
+        
+        span.className = 'huruf-animasi';
+        
+        // Rahasianya ada di sini: Jeda waktu (delay) yang bertambah tiap huruf (0.1 detik)
+        span.style.animationDelay = `${index * 0.1}s`;
+        
+        wadahNama.appendChild(span);
+    });
+});
