@@ -355,6 +355,7 @@ COVER
     margin-bottom: 8px;
 }
 
+/* CSS Utama Nama Tamu (Sesuai milik Anda) */
 #namaTamu {
     font-size: 22px;
     color: var(--gold); /* Menggunakan warna emas yang sama dengan simbol & */
@@ -365,6 +366,32 @@ COVER
     /* Efek bayangan agar teks tetap terbaca jelas di atas foto */
     text-shadow: 0 4px 10px rgba(0,0,0,0.6); 
     font-family: 'Great Vibes', cursive;
+    
+    /* Tambahan agar posisi teks tetap sejajar di tengah */
+    text-align: center;
+}
+
+/* CSS Khusus Animasi Per Huruf */
+.huruf-animasi {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: munculKiri 0.5s ease-out forwards;
+    
+    /* Kunci utama: Memaksa huruf mengambil warna, ukuran, dan bayangan dari #namaTamu */
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    text-shadow: inherit;
+}
+
+/* Keyframe Gerakan dari Kiri */
+@keyframes munculKiri {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 
@@ -2372,30 +2399,3 @@ Tombol Music dan ScrollTop, serta Hero Mobile
 
 
 
-#namaTamu {
-    font-family: 'Great Vibes', cursive;
-    font-size: 3rem;
-    font-weight: 400;
-    color: #ffffff;
-    margin-top: 10px;
-    /* Flexbox agar hurufnya sejajar rapi ke samping dan tetap di tengah */
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; 
-}
-
-/* Class ini akan disisipkan otomatis oleh JavaScript nanti */
-.huruf-animasi {
-    display: inline-block;
-    opacity: 0;
-    transform: translateX(-20px); /* Posisi awal agak ke kiri */
-    animation: munculKiri 0.5s ease-out forwards;
-}
-
-/* Keyframe untuk gerakan animasinya */
-@keyframes munculKiri {
-    to {
-        opacity: 1;
-        transform: translateX(0); /* Posisi akhir kembali normal */
-    }
-}
