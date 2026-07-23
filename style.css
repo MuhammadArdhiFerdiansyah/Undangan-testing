@@ -2369,3 +2369,33 @@ Tombol Music dan ScrollTop, serta Hero Mobile
     }
 
 }
+
+
+
+#namaTamu {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 10px;
+    /* Flexbox agar hurufnya sejajar rapi ke samping dan tetap di tengah */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+/* Class ini akan disisipkan otomatis oleh JavaScript nanti */
+.huruf-animasi {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(-20px); /* Posisi awal agak ke kiri */
+    animation: munculKiri 0.5s ease-out forwards;
+}
+
+/* Keyframe untuk gerakan animasinya */
+@keyframes munculKiri {
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Posisi akhir kembali normal */
+    }
+}
