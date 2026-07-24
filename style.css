@@ -598,18 +598,17 @@ HERO
             transparent 1px, transparent 100%);
 }
 
-.hero-box{
-    position:absolute;
-    left:50%;
-    bottom:90px;        /* naik dari 60px */
-    transform:translateX(-50%);
-    width:92%;            /* lebih lebar dari 88% */
-    padding:42px 30px;   /* lebih lega dari 35px, bikin box terasa lebih "panjang" */
-    border-radius:24px;
-    text-align:center;
-    background:rgba(255,255,255,.05);
-    backdrop-filter:blur(18px);
-    border:1px solid rgba(255,255,255,.08);
+.hero-box {
+    display: flex;
+    flex-direction: column;  /* Menyusun teks dari atas ke bawah */
+    align-items: center;     /* Mengunci semuanya persis di tengah horizontal */
+    justify-content: center; /* Mengunci semuanya persis di tengah vertikal */
+    text-align: center;      /* Memaksa teks paragraf rata tengah */
+    
+    /* Pastikan padding kiri-kanan seimbang agar tidak berat sebelah */
+    padding: 30px 20px; 
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .section-mini{
@@ -625,12 +624,10 @@ HERO
 }
 
 .hero-box h2 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 52px;
-    margin: 18px auto; /* Ubah margin menjadi auto agar rata tengah sempurna */
-    font-weight: 400;
-    padding-right: 15px; /* Memberikan ruang baca bagi ekor huruf 'y' agar visualnya seimbang */
-    transform: translateX(5px); /* Menambahkan geseran sedikit ke kanan */
+    text-align: center !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100%;
 }
 
 .hero-box p{
