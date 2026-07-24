@@ -2380,6 +2380,7 @@ Tombol Music dan ScrollTop, serta Hero Mobile
     .hero-box h2 {
         text-align: center !important;
         width: 100% !important;
+        font-size: 65px !important;
         
         /* Memberikan sedikit dorongan ke kanan agar ekor huruf 'y' 
            tidak membuat tulisan terlihat berat sebelah ke kiri */
