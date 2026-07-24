@@ -2298,7 +2298,7 @@ section:not(.hero):not(.thanks)::after{
     top:-11px;
     left:50%;
     transform:translateX(-50%);
-    font-size:22px;
+    font-size:45px;
     color:var(--gold);
     pointer-events:none;
     line-height:1;
