@@ -2357,6 +2357,7 @@ Tombol Music dan ScrollTop, serta Hero Mobile
     .hero-box h2{
         font-size:clamp(30px,9vw,42px); /* otomatis nyesuaiin 30–42px sesuai lebar layar */
         margin:12px 0;
+        position: center;
     }
     .section-mini{
         font-size:11px;
