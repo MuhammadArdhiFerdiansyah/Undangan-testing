@@ -1419,8 +1419,12 @@ body.opened #musicBtn {
 
 @keyframes spin{
 
-    0%, 100% { transform: scale(1) rotate(0deg); }
-    50% { transform: scale(1.12) rotate(8deg); }
+from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 
 }
 
