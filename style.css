@@ -603,7 +603,7 @@ HERO
 .hero-box{
     position:absolute;
     left:50%;
-    bottom:90px;        /* naik dari 60px */
+    bottom:60px;        /* naik dari 60px */
     transform:translateX(-50%);
     width:92%;            /* lebih lebar dari 88% */
     padding:42px 30px;   /* lebih lega dari 35px, bikin box terasa lebih "panjang" */
