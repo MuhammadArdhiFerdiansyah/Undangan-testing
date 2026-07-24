@@ -2324,7 +2324,7 @@ Efek Partikel
 Tombol Music dan ScrollTop, serta Hero Mobile
 ======================================*/
 
-@media (max-width:768px){
+@media (max-width:480px){
 
     .hero{
         min-height:100vh;
