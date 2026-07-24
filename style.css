@@ -599,31 +599,17 @@ HERO
 }
 
 .hero-box{
-
     position:absolute;
-
     left:50%;
-
-    bottom:60px;
-
+    bottom:90px;        /* naik dari 60px */
     transform:translateX(-50%);
-
-    width:88%;
-
-    z-index:2;
-
-    padding:35px;
-
+    width:92%;            /* lebih lebar dari 88% */
+    padding:42px 30px;   /* lebih lega dari 35px, bikin box terasa lebih "panjang" */
     border-radius:24px;
-
     text-align:center;
-
     background:rgba(255,255,255,.05);
-
     backdrop-filter:blur(18px);
-
     border:1px solid rgba(255,255,255,.08);
-
 }
 
 .section-mini{
@@ -2357,7 +2343,6 @@ Tombol Music dan ScrollTop, serta Hero Mobile
     .hero-box h2{
         font-size:clamp(30px,9vw,42px); /* otomatis nyesuaiin 30–42px sesuai lebar layar */
         margin:12px 0;
-        position: center;
     }
     .section-mini{
         font-size:11px;
