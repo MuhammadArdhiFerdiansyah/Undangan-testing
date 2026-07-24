@@ -2372,3 +2372,19 @@ Tombol Music dan ScrollTop, serta Hero Mobile
         font-size: 36px; /* <--- GANTI ANGKA INI UNTUK UKURAN DI DESKTOP */
     }
 }
+
+/* =========================================
+   PERBAIKAN POSISI TEKS HANYA UNTUK HP
+========================================= */
+@media screen and (max-width: 768px) {
+    .hero-box h2 {
+        text-align: center !important;
+        width: 100% !important;
+        
+        /* Memberikan sedikit dorongan ke kanan agar ekor huruf 'y' 
+           tidak membuat tulisan terlihat berat sebelah ke kiri */
+        padding-left: 12px !important; 
+        padding-right: 0 !important;
+        transform: none !important;
+    }
+}
