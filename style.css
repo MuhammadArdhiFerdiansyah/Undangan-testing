@@ -634,6 +634,8 @@ HERO
 
     font-weight:400;
 
+    transform:translateX(-0.15em);
+
 }
 
 .hero-box p{
@@ -1420,17 +1422,8 @@ body.opened #musicBtn {
 
 @keyframes spin{
 
-    from{
-
-        transform:rotate(0deg);
-
-    }
-
-    to{
-
-        transform:rotate(360deg);
-
-    }
+    0%, 100% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.12) rotate(8deg); }
 
 }
 
