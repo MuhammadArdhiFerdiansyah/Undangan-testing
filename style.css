@@ -2385,7 +2385,7 @@ Tombol Music dan ScrollTop, serta Hero Mobile
         
         /* Memberikan sedikit dorongan ke kanan agar ekor huruf 'y' 
            tidak membuat tulisan terlihat berat sebelah ke kiri */
-        padding-left: 4.5px !important; 
+        padding-left: 4px !important; 
         padding-right: 0 !important;
         transform: none !important;
     }
