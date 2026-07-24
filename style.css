@@ -634,8 +634,6 @@ HERO
 
     font-weight:400;
 
-    transform:translateX(-0.15em);
-
 }
 
 .hero-box p{
@@ -1403,6 +1401,8 @@ body.opened #musicBtn {
     content:"♪";
 
     font-size:26px;
+    display:block;
+    line-height:1;
 
 }
 
@@ -1596,6 +1596,8 @@ RESPONSIVE
     .hero-box h2{
 
         font-size:48px;
+
+        transform:translateX(-0.15em);
 
     }
 
@@ -2335,7 +2337,7 @@ Tombol Music dan ScrollTop, serta Hero Mobile
     .hero-box h2{
         font-size:clamp(30px,9vw,42px);
         margin:12px 0;
-        transform:translateX(-0.15em);   /* BARU: koreksi center, pakai satuan em biar ikut nyesuaian ukuran font yang responsif (clamp) */
+    
     }
     .section-mini{
         font-size:11px;
