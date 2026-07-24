@@ -624,16 +624,13 @@ HERO
 
 }
 
-.hero-box h2{
-
-    font-family:'Great Vibes',cursive;
-
-    font-size:52px;
-
-    margin:18px 0;
-
-    font-weight:400;
-
+.hero-box h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 52px;
+    margin: 18px auto; /* Ubah margin menjadi auto agar rata tengah sempurna */
+    font-weight: 400;
+    padding-right: 15px; /* Memberikan ruang baca bagi ekor huruf 'y' agar visualnya seimbang */
+    transform: translateX(5px); /* Menambahkan geseran sedikit ke kanan */
 }
 
 .hero-box p{
