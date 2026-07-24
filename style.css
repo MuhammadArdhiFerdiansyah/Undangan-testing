@@ -2322,7 +2322,7 @@ Tombol Music dan ScrollTop, serta Hero Mobile
     }
 
     .hero-box{
-        bottom:50px;            /* naik dari 30px */
+        bottom:160px;            /* naik dari 30px */
         padding:30px 22px;      /* lebih lega dari 24px 20px */
     }
     .hero-box h2{
@@ -2383,7 +2383,7 @@ Tombol Music dan ScrollTop, serta Hero Mobile
         text-align: center !important;
         width: 100% !important;
         font-size: 52px !important;
-        bottom: 180px !important;
+
         
         /* Memberikan sedikit dorongan ke kanan agar ekor huruf 'y' 
            tidak membuat tulisan terlihat berat sebelah ke kiri */
