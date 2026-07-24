@@ -2362,7 +2362,7 @@ Tombol Music dan ScrollTop, serta Hero Mobile
 
 /* 1. TAMPILAN MOBILE (HP) - Ukuran Dasar */
 #musicBtn i {
-    font-size: 28px; /* <--- GANTI ANGKA INI UNTUK UKURAN DI HP */
+    font-size: 50px; /* <--- GANTI ANGKA INI UNTUK UKURAN DI HP */
     display: inline-block;
     transform-origin: 50% 50%;
     line-height: 1;
