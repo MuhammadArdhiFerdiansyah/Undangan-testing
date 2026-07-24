@@ -2266,7 +2266,7 @@ section:not(.hero):not(.thanks)::before{
 section:not(.hero):not(.thanks)::after{
     content:"♥";
     position:absolute;
-    top:-11px;
+    top:-28px;
     left:50%;
     transform:translateX(-50%);
     font-size:45px;
