@@ -2355,3 +2355,22 @@ Tombol Music dan ScrollTop, serta Hero Mobile
     }
 
 }
+
+/* =========================================
+   UKURAN IKON PIRINGAN HITAM
+========================================= */
+
+/* 1. TAMPILAN MOBILE (HP) - Ukuran Dasar */
+#musicBtn i {
+    font-size: 28px; /* <--- GANTI ANGKA INI UNTUK UKURAN DI HP */
+    display: inline-block;
+    transform-origin: 50% 50%;
+    line-height: 1;
+}
+
+/* 2. TAMPILAN DESKTOP (Layar di atas 768px) */
+@media screen and (min-width: 768px) {
+    #musicBtn i {
+        font-size: 36px; /* <--- GANTI ANGKA INI UNTUK UKURAN DI DESKTOP */
+    }
+}
