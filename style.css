@@ -2322,7 +2322,7 @@ Tombol Music dan ScrollTop, serta Hero Mobile
     }
 
     .hero-box{
-        bottom:160px;            /* naik dari 30px */
+        bottom:100px;            /* naik dari 30px */
         padding:30px 22px;      /* lebih lega dari 24px 20px */
     }
     .hero-box h2{
