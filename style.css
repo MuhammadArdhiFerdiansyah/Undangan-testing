@@ -1393,16 +1393,6 @@ body.opened #musicBtn {
 
 }
 
-#musicBtn::before{
-
-    content:"♪";
-
-    font-size:26px;
-    display:block;
-    line-height:1;
-
-}
-
 #scrollTop::before{
 
     content:"╱╲";
