@@ -2385,8 +2385,17 @@ Tombol Music dan ScrollTop, serta Hero Mobile
         
         /* Memberikan sedikit dorongan ke kanan agar ekor huruf 'y' 
            tidak membuat tulisan terlihat berat sebelah ke kiri */
-        padding-left: 4px !important; 
-        padding-right: 0 !important;
+        padding-left: 0px !important; 
+        padding-right: 6px !important;
         transform: none !important;
     }
+}
+
+/* =========================================
+   MENGHILANGKAN BLOK BIRU SAAT DI-TAP DI HP
+========================================= */
+button, a, .hero-box {
+    -webkit-tap-highlight-color: transparent !important; /* Menghilangkan blok warna biru */
+    -webkit-user-select: none !important; /* Mencegah efek blok seperti mau menyalin teks di Safari/iOS */
+    user-select: none !important; /* Mencegah efek blok seperti mau menyalin teks di Android/Chrome */
 }
