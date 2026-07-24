@@ -1377,6 +1377,7 @@ FLOAT BUTTON
     display: flex;
     justify-content: center;
     align-items: center;
+    transform-origin: center;
 
 }
 
@@ -2281,7 +2282,7 @@ section:not(.hero):not(.thanks)::before{
 section:not(.hero):not(.thanks)::after{
     content:"♥";
     position:absolute;
-    top:-11px;
+    top:-22px;
     left:50%;
     transform:translateX(-50%);
     font-size:45px;
